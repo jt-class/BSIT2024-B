@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgb1mq8c6hjtv"
+path="res://.godot/imported/Water sounds.mp3-0bb91f6f6b598fde021aa023a03a29af.mp3str"
+
+[deps]
+
+source_file="res://BSIT2024-B/Water sounds.mp3"
+dest_files=["res://.godot/imported/Water sounds.mp3-0bb91f6f6b598fde021aa023a03a29af.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

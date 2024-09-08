@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://2w46l8va1jwc"
-path="res://.godot/imported/tempSFX-glitching.wav-79290d169c729158a51ccc8d43d9174e.sample"
+path="res://.godot/imported/tempSFX-glitching.wav-3ee1cfe5c98428c3e94fd74f7c018e44.sample"
 
 [deps]
 
-source_file="res://BSIT2024-B/placeholder-assets/ferrer/tempSFX/tempSFX-glitching.wav"
-dest_files=["res://.godot/imported/tempSFX-glitching.wav-79290d169c729158a51ccc8d43d9174e.sample"]
+source_file="res://BSIT2024-B/placeholder-assets/sfx/ferrer/tempSFX/tempSFX-glitching.wav"
+dest_files=["res://.godot/imported/tempSFX-glitching.wav-3ee1cfe5c98428c3e94fd74f7c018e44.sample"]
 
 [params]
 

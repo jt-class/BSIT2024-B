@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://rexm8h1toe7s"]
+
+[ext_resource type="Script" path="res://BSIT2024-B/menu-scene/scripts/main_menu.gd" id="1_d3tax"]
+[ext_resource type="Texture2D" uid="uid://cuhx7urlqs32e" path="res://BSIT2024-B/placeholder-assets/UI/bg-main.png" id="1_k4qh2"]
+[ext_resource type="Theme" uid="uid://c16wjin8rxwi0" path="res://BSIT2024-B/menu-scene/main-menu-button-them.tres" id="2_ud75u"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d3tax")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1024, 600)
+layout_mode = 0
+offset_right = 1024.0
+offset_bottom = 600.0
+
+[node name="Bg-main" type="Sprite2D" parent="."]
+position = Vector2(574, 325.5)
+scale = Vector2(1.44, 1.44667)
+texture = ExtResource("1_k4qh2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 455.0
+offset_right = 728.0
+offset_bottom = 610.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="start" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_ud75u")
+text = "START"
+
+[node name="options" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_ud75u")
+text = "OPTIONS"
+
+[node name="about" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_ud75u")
+text = "ABOUT"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/options" to="." method="_on_options_pressed"]

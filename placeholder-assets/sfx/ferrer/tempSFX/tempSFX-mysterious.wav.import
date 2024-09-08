@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://xhic5m6wf7w7"
-path="res://.godot/imported/tempSFX-mysterious.wav-5db02b46b2984994cf89b4a725358df5.sample"
+path="res://.godot/imported/tempSFX-mysterious.wav-8471c0a5ea37f2744e73ff447e4edc98.sample"
 
 [deps]
 
-source_file="res://BSIT2024-B/placeholder-assets/ferrer/tempSFX/tempSFX-mysterious.wav"
-dest_files=["res://.godot/imported/tempSFX-mysterious.wav-5db02b46b2984994cf89b4a725358df5.sample"]
+source_file="res://BSIT2024-B/placeholder-assets/sfx/ferrer/tempSFX/tempSFX-mysterious.wav"
+dest_files=["res://.godot/imported/tempSFX-mysterious.wav-8471c0a5ea37f2744e73ff447e4edc98.sample"]
 
 [params]
 

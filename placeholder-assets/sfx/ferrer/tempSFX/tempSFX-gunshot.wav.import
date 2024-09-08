@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b5xnikqxj2hqe"
-path="res://.godot/imported/tempSFX-gunshot.wav-bdf6e906b757581473a4a421d152223b.sample"
+path="res://.godot/imported/tempSFX-gunshot.wav-645393847a1f56415d93998578d59751.sample"
 
 [deps]
 
-source_file="res://BSIT2024-B/placeholder-assets/ferrer/tempSFX/tempSFX-gunshot.wav"
-dest_files=["res://.godot/imported/tempSFX-gunshot.wav-bdf6e906b757581473a4a421d152223b.sample"]
+source_file="res://BSIT2024-B/placeholder-assets/sfx/ferrer/tempSFX/tempSFX-gunshot.wav"
+dest_files=["res://.godot/imported/tempSFX-gunshot.wav-645393847a1f56415d93998578d59751.sample"]
 
 [params]
 

@@ -50,3 +50,4 @@ theme = ExtResource("2_ud75u")
 text = "ABOUT"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/about" to="." method="_on_about_pressed"]

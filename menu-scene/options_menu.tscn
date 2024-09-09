@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b2oq6i4hdggv4" path="res://BSIT2024-B/menu-scene/add_button.png" id="7_grgwx"]
 [ext_resource type="Texture2D" uid="uid://biu32kqkus7l1" path="res://BSIT2024-B/placeholder-assets/UI/arrow-back.png" id="10_8b8oh"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hcxko"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eshdr"]
 bg_color = Color(0.262745, 0.262745, 0.262745, 1)
 border_width_left = 40
 border_width_right = 40
@@ -21,7 +21,7 @@ border_color = Color(0.262745, 0.262745, 0.262745, 1)
 [sub_resource type="Theme" id="Theme_8yi03"]
 Label/font_sizes/font_size = 55
 Label/fonts/font = ExtResource("7_blama")
-Label/styles/normal = SubResource("StyleBoxFlat_hcxko")
+Label/styles/normal = SubResource("StyleBoxFlat_eshdr")
 
 [node name="options menu" type="Control"]
 layout_mode = 3
@@ -49,6 +49,7 @@ offset_left = 57.0
 offset_top = 37.0
 offset_right = 1088.0
 offset_bottom = 620.0
+metadata/_edit_use_anchors_ = true
 
 [node name="inner-frame" type="Panel" parent="frame"]
 layout_mode = 0

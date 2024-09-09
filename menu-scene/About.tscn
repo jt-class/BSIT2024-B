@@ -1,0 +1,117 @@
+[gd_scene load_steps=8 format=3 uid="uid://dsfsxnr8q0qqo"]
+
+[ext_resource type="Script" path="res://BSIT2024-B/menu-scene/scripts/about.gd" id="1_kdu76"]
+[ext_resource type="Texture2D" uid="uid://cuhx7urlqs32e" path="res://BSIT2024-B/placeholder-assets/UI/bg-main.png" id="1_stbua"]
+[ext_resource type="Theme" uid="uid://bug5waii5hebm" path="res://BSIT2024-B/menu-scene/frame-inside-color.tres" id="3_y8skt"]
+[ext_resource type="Theme" uid="uid://cl68ye5mhu3yu" path="res://BSIT2024-B/menu-scene/title-label.tres" id="4_vpptn"]
+[ext_resource type="Theme" uid="uid://cq5jvkicmfsa7" path="res://BSIT2024-B/menu-scene/label-small.tres" id="5_jw2do"]
+[ext_resource type="Texture2D" uid="uid://biu32kqkus7l1" path="res://BSIT2024-B/placeholder-assets/UI/arrow-back.png" id="6_4j4d7"]
+
+[sub_resource type="GDScript" id="GDScript_i4vax"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="About" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kdu76")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_stbua")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 52.0
+offset_top = 22.0
+offset_right = -36.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="frame" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="inner-frame" type="Panel" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 49.0
+offset_right = 995.0
+offset_bottom = 547.0
+theme = ExtResource("3_y8skt")
+
+[node name="title" type="Label" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 68.0
+offset_right = 709.0
+offset_bottom = 155.0
+theme = ExtResource("4_vpptn")
+text = "About"
+vertical_alignment = 1
+
+[node name="Label-volume" type="Label" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 161.0
+offset_right = 949.0
+offset_bottom = 515.0
+theme = ExtResource("5_jw2do")
+text = "The story focuses on Shin, who returns to his hometown for the funeral of his childhood friend Nami, only to become part of a mystery and horrible sequence of events. It combines elements like supernatural horror, suspense, and time-loop mechanics. As Shin attempts to solve the mystery, he realizes that the town has been visited by mysterious doppelgängers, and he must travel through multiple times to save his loved ones and discover the truth behind Nami's death."
+horizontal_alignment = 1
+vertical_alignment = 3
+autowrap_mode = 3
+
+[node name="button-volume" type="HBoxContainer" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 208.0
+offset_right = 689.0
+offset_bottom = 277.0
+
+[node name="button-speed" type="HBoxContainer" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 397.0
+offset_right = 736.0
+offset_bottom = 466.0
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 86.0
+offset_right = 126.0
+offset_bottom = 131.0
+texture_normal = ExtResource("6_4j4d7")
+texture_pressed = ExtResource("6_4j4d7")
+texture_hover = ExtResource("6_4j4d7")
+texture_focused = ExtResource("6_4j4d7")
+script = SubResource("GDScript_i4vax")
+
+[connection signal="pressed" from="MarginContainer/frame/TextureButton" to="." method="_on_texture_button_pressed"]

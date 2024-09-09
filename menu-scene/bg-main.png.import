@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hhosusfhm7v1"
-path="res://.godot/imported/bg-main.png-e6c32928aee0515274d82f5a6ebe98b3.ctex"
+path="res://.godot/imported/bg-main.png-7eb495eed833bdfd8e9f913d3b417a48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BSIT2024-B/placeholder-assets/UI/bg-main.png"
-dest_files=["res://.godot/imported/bg-main.png-e6c32928aee0515274d82f5a6ebe98b3.ctex"]
+source_file="res://BSIT2024-B/menu-scene/bg-main.png"
+dest_files=["res://.godot/imported/bg-main.png-7eb495eed833bdfd8e9f913d3b417a48.ctex"]
 
 [params]
 

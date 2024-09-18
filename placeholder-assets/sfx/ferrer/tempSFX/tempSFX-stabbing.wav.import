@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bbwultps7q53e"
-path="res://.godot/imported/tempSFX-stabbing.wav-65476121da70ba3e0c0e2e770e722bc3.sample"
+path="res://.godot/imported/tempSFX-stabbing.wav-10e3e6820f363c13e216b7343735d99e.sample"
 
 [deps]
 
-source_file="res://BSIT2024-B/placeholder-assets/ferrer/tempSFX/tempSFX-stabbing.wav"
-dest_files=["res://.godot/imported/tempSFX-stabbing.wav-65476121da70ba3e0c0e2e770e722bc3.sample"]
+source_file="res://BSIT2024-B/placeholder-assets/sfx/ferrer/tempSFX/tempSFX-stabbing.wav"
+dest_files=["res://.godot/imported/tempSFX-stabbing.wav-10e3e6820f363c13e216b7343735d99e.sample"]
 
 [params]
 

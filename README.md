@@ -9,22 +9,26 @@
  **Settings:**
       **Japan, Sado Island**
  **Characters**
-  - Shin -  Main character (Male)
-  - Nami - Shin’s childhood best friend (Female)
-  - Emi - Nami’s younger sister 
-  - Ren - Nami and Emi’s father 
-  - Kenji - Shin’s childhood best friend (Male)
-  - Chiyo - Kenji’s younger sister
-  - Kenzo - Kenji and Chiyo’s father (the director of the only hospital in Sado)
-  - Lekra Sato- A young boy
-  - Akira Sato - Lekra’s mother
-  - Kairi Sato- Lekra’s father
-  - Amaya - A Mysterious Woman (a girl with eyeglasses)
-  - Daisuke - An elderly hunter who carries a rifle (Male)
-  - Haruto - Police Officer (Male)
-  - Fuji - Chief Priest (Male)
+  -Shin Fujiwara -  (Main character): tall young man, white-skinned, and in high school.
+  -Nami Yoshida - (Shin’s childhood best friend): average women's height, young women, light-skinned, and in high school.
+  -Emi Yoshida - (Nami’s younger sister): average woman’s height, younger than Nami, tan-skinned, and in her first year of high school.
+  -Ren Yoshida - (Nami and Emi’s father): adult man, build: dad body, has white hair, and light-skinned. 
+  -Kenji Machiko - (Shin’s childhood best friend): tall young man, white-skinned, brown hair, and is in high school.
+  -Chiyo Machiko - (Kenji’s younger sister): a tall young girl, light-skinned, always wears a summer dress, has brown hair, and is in high school. 
+  -Kenzo Machiko - (Kenji and Chiyo’s father; he is the director of the only hospital in Sado) has average height, is an old man, has white hair, and wears 
+   glasses.
+  -Lekra Sato- (son of Sato family): a child of elementary height with black hair. He always wears a black shirt and brown shorts.
+  -Akira Sato - (Lekra’s mother): adult women, average woman’s height, light-skinned, short dark brown hair, 
+  -Kairi Sato- (Lekra’s father): adult man, tall man, light-skinned, black hair.
+  -Amaya Kojima - (A Mysterious Woman): a woman with eyeglasses
+  -Daisuke Kozuka - (shadow hunter): old man, white hair and beard, looks like a lumberjack. 
+  -Haruto Aoki- (Police Officer): sharp-looking guy, has blonde medium volume of hair,  tall young adult man. 
+  -Fuji Nomura - (Chief Priest): a young, very tall adult man with medium-long, light brown hair. He wears glasses and is usually in his priest uniform.
+
 
 ## First Chapter
+-Ferraris
+-Cueto
 Shin Tachibana is a high school student who left Sado Island years ago, hoping for the city's excitement, bright lights, and endless possibilities. But when he received news of Nami's death, something pulled him back. He couldn’t understand it—a sense of duty, maybe—or the gnawing guilt that he had left behind those he cared about most. Nami  is a high school student who has been his best friend, the girl who dared him to explore the darkest caves, who laughed with him under the summer stars, and who has been there for him when no one else was.
 Shin woke up on a boat, where his eyes wandered around, and he checked his phone. He saw his childhood friend Nami on the boat. Nami’s dressed in a plain white summer dress. 
 

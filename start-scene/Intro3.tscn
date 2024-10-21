@@ -1,0 +1,111 @@
+[gd_scene load_steps=7 format=3 uid="uid://d21hye85v8kw2"]
+
+[ext_resource type="Script" path="res://BSIT2024-B/start-scene/intro3.gd" id="1_lfnc6"]
+[ext_resource type="Texture2D" uid="uid://4be7l4c4evcc" path="res://BSIT2024-B/start-scene/images/bg-intro.png" id="1_mvebc"]
+[ext_resource type="Theme" uid="uid://bug5waii5hebm" path="res://BSIT2024-B/menu-scene/frame-inside-color.tres" id="2_btagd"]
+[ext_resource type="Script" path="res://BSIT2024-B/start-scene/script/intro2.gd" id="2_kin3w"]
+[ext_resource type="Theme" uid="uid://cl68ye5mhu3yu" path="res://BSIT2024-B/menu-scene/title-label.tres" id="3_jg2hj"]
+[ext_resource type="Theme" uid="uid://nrhqgsgjrq7l" path="res://BSIT2024-B/start-scene/inside-button-them.tres" id="4_oygwb"]
+
+[node name="Intro3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lfnc6")
+
+[node name="bg" type="Button" parent="."]
+layout_mode = 0
+offset_right = 808.0
+offset_bottom = 458.0
+script = ExtResource("2_kin3w")
+
+[node name="bg-intro" type="TextureRect" parent="bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 344.0
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mvebc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 67.0
+offset_top = 432.0
+offset_right = -98.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="frame" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="inner-frame" type="Panel" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 14.0
+offset_right = 947.0
+offset_bottom = 162.0
+theme = ExtResource("2_btagd")
+
+[node name="narrate" type="Label" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 18.0
+offset_right = 903.0
+offset_bottom = 120.0
+theme = ExtResource("3_jg2hj")
+text = "a sense of guilt or duty he couldn't shake."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 556.0
+offset_right = 463.0
+offset_bottom = 595.0
+theme = ExtResource("4_oygwb")
+text = "BACK"
+
+[node name="load" type="Button" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 556.0
+offset_right = 543.0
+offset_bottom = 595.0
+theme = ExtResource("4_oygwb")
+text = "LOAD"
+
+[node name="save" type="Button" parent="."]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 556.0
+offset_right = 623.0
+offset_bottom = 595.0
+theme = ExtResource("4_oygwb")
+text = "SAVE"
+
+[node name="skip" type="Button" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 556.0
+offset_right = 703.0
+offset_bottom = 595.0
+theme = ExtResource("4_oygwb")
+text = "SKIP"
+
+[connection signal="pressed" from="bg" to="." method="_on_bg_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

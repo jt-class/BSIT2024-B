@@ -1,0 +1,181 @@
+[gd_scene load_steps=7 format=3 uid="uid://ciiiw87xce5x"]
+
+[ext_resource type="Script" path="res://BSIT2024-B/start-scene/boat_te_8.gd" id="1_ghehy"]
+[ext_resource type="Texture2D" uid="uid://fpeydavfu1wu" path="res://BSIT2024-B/start-scene/images/bg-boat-dining.jpg" id="2_cfra5"]
+[ext_resource type="Theme" uid="uid://bug5waii5hebm" path="res://BSIT2024-B/menu-scene/frame-inside-color.tres" id="3_d2jyu"]
+[ext_resource type="Theme" uid="uid://cl68ye5mhu3yu" path="res://BSIT2024-B/menu-scene/title-label.tres" id="4_ftt1r"]
+[ext_resource type="Theme" uid="uid://nrhqgsgjrq7l" path="res://BSIT2024-B/start-scene/inside-button-them.tres" id="5_wewve"]
+
+[sub_resource type="Theme" id="Theme_ayeb6"]
+
+[node name="boat_te8" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ghehy")
+
+[node name="bg" type="Button" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="TextureRect" type="TextureRect" parent="bg"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_cfra5")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 67.0
+offset_top = 432.0
+offset_right = -98.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="frame" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="inner-frame" type="Panel" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 14.0
+offset_right = 947.0
+offset_bottom = 162.0
+theme = ExtResource("3_d2jyu")
+
+[node name="narrate" type="Label" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 24.0
+offset_right = 875.0
+offset_bottom = 111.0
+theme = ExtResource("4_ftt1r")
+text = "The girl remained silent but curious, watching him. "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 556.0
+offset_right = 463.0
+offset_bottom = 595.0
+theme = ExtResource("5_wewve")
+text = "BACK"
+
+[node name="load" type="Button" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 556.0
+offset_right = 543.0
+offset_bottom = 595.0
+theme = ExtResource("5_wewve")
+text = "LOAD"
+
+[node name="save" type="Button" parent="."]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 556.0
+offset_right = 623.0
+offset_bottom = 595.0
+theme = ExtResource("5_wewve")
+text = "SAVE"
+
+[node name="skip" type="Button" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 556.0
+offset_right = 703.0
+offset_bottom = 595.0
+theme = ExtResource("5_wewve")
+text = "SKIP"
+
+[node name="blur" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="MarginContainer" type="MarginContainer" parent="blur"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 122.0
+offset_top = 50.0
+offset_right = -147.0
+offset_bottom = -237.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="frame" type="Panel" parent="blur/MarginContainer"]
+layout_mode = 2
+
+[node name="inner-frame" type="Panel" parent="blur/MarginContainer/frame"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 14.0
+offset_right = 833.0
+offset_bottom = 325.0
+theme = ExtResource("3_d2jyu")
+
+[node name="narrate" type="Label" parent="blur/MarginContainer/frame"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 9.0
+offset_right = 809.0
+offset_bottom = 96.0
+theme = ExtResource("4_ftt1r")
+theme_override_font_sizes/font_size = 32
+text = "What does Shin do next?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChoicesContainer" type="MarginContainer" parent="blur"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 148.0
+offset_right = 923.0
+offset_bottom = 371.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="blur/ChoicesContainer"]
+layout_mode = 2
+
+[node name="choice1" type="Button" parent="blur/ChoicesContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_ayeb6")
+theme_override_font_sizes/font_size = 24
+text = "Ask the girl if she knows Nami."
+
+[node name="choice2" type="Button" parent="blur/ChoicesContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_ayeb6")
+theme_override_font_sizes/font_size = 24
+text = "Apologize again for the outburst."
+
+[node name="choice3" type="Button" parent="blur/ChoicesContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_ayeb6")
+theme_override_font_sizes/font_size = 24
+text = "Try to remember the dream he just had."
+
+[connection signal="pressed" from="bg" to="." method="_on_bg_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="blur/ChoicesContainer/VBoxContainer/choice1" to="." method="_on_choice_1_pressed"]
+[connection signal="pressed" from="blur/ChoicesContainer/VBoxContainer/choice2" to="." method="_on_choice_2_pressed"]
+[connection signal="pressed" from="blur/ChoicesContainer/VBoxContainer/choice3" to="." method="_on_choice_3_pressed"]

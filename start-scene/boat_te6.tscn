@@ -1,0 +1,162 @@
+[gd_scene load_steps=11 format=3 uid="uid://demiqk7sbjv5f"]
+
+[ext_resource type="Script" path="res://BSIT2024-B/start-scene/boat_te_6.gd" id="1_idycl"]
+[ext_resource type="Texture2D" uid="uid://fpeydavfu1wu" path="res://BSIT2024-B/start-scene/images/bg-boat-dining.jpg" id="2_0j467"]
+[ext_resource type="Theme" uid="uid://w70hke1ugy6s" path="res://BSIT2024-B/start-scene/title-label.tres" id="3_3lwfu"]
+[ext_resource type="Theme" uid="uid://bug5waii5hebm" path="res://BSIT2024-B/menu-scene/frame-inside-color.tres" id="4_0stbk"]
+[ext_resource type="Theme" uid="uid://cl68ye5mhu3yu" path="res://BSIT2024-B/menu-scene/title-label.tres" id="5_av17x"]
+[ext_resource type="Theme" uid="uid://nrhqgsgjrq7l" path="res://BSIT2024-B/start-scene/inside-button-them.tres" id="6_v2ei1"]
+
+[sub_resource type="Shader" id="Shader_b55gd"]
+code = "shader_type canvas_item;
+
+void vertex() {
+	// Called for every vertex the material is visible on.
+}
+
+void fragment() {
+    vec2 uv = UV;
+
+    // Adjust the slope to control the angle of the triangle
+    float slope = uv.x * 2.0 - uv.y;
+    
+    // Draw the triangle (inside the shape)
+    if (slope > 0.0) {
+        COLOR = vec4(0.1, 0.1, 0.1, 1.0); // Triangle color (dark)
+    } else {
+        discard; // Transparent outside of the triangle
+    }
+}
+
+//void light() {
+	// Called for every pixel for every light affecting the CanvasItem.
+	// Uncomment to replace the default light processing function with this one.
+//}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m3nt6"]
+shader = SubResource("Shader_b55gd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvlbm"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_210vo"]
+Panel/styles/panel = SubResource("StyleBoxFlat_pvlbm")
+
+[node name="boat_te6" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_idycl")
+
+[node name="bg" type="Button" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="TextureRect" type="TextureRect" parent="bg"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_0j467")
+
+[node name="Panel" type="Panel" parent="."]
+material = SubResource("ShaderMaterial_m3nt6")
+layout_mode = 0
+offset_left = 301.0
+offset_top = 434.0
+offset_right = 516.0
+offset_bottom = 508.0
+rotation = 3.14159
+theme = SubResource("Theme_210vo")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 61.0
+offset_right = 266.0
+offset_bottom = 111.0
+rotation = 3.14159
+theme = ExtResource("3_3lwfu")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 36
+text = "Shin"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 67.0
+offset_top = 432.0
+offset_right = -98.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="frame" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="inner-frame" type="Panel" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 14.0
+offset_right = 947.0
+offset_bottom = 162.0
+theme = ExtResource("4_0stbk")
+
+[node name="narrate" type="Label" parent="MarginContainer/frame"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 24.0
+offset_right = 875.0
+offset_bottom = 111.0
+theme = ExtResource("5_av17x")
+text = "Sorry, I didn’t mean to shout..."
+vertical_alignment = 1
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 556.0
+offset_right = 463.0
+offset_bottom = 595.0
+theme = ExtResource("6_v2ei1")
+text = "BACK"
+
+[node name="load" type="Button" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 556.0
+offset_right = 543.0
+offset_bottom = 595.0
+theme = ExtResource("6_v2ei1")
+text = "LOAD"
+
+[node name="save" type="Button" parent="."]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 556.0
+offset_right = 623.0
+offset_bottom = 595.0
+theme = ExtResource("6_v2ei1")
+text = "SAVE"
+
+[node name="skip" type="Button" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 556.0
+offset_right = 703.0
+offset_bottom = 595.0
+theme = ExtResource("6_v2ei1")
+text = "SKIP"
+
+[connection signal="pressed" from="bg" to="." method="_on_bg_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://6eegvd1ysmr3"]
+
+[ext_resource type="FontFile" uid="uid://1a76kyhp1mof" path="res://BSIT2024-B/menu-scene/ShortStack-Regular.ttf" id="1_k5kw2"]
+
+[resource]
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 25
+Label/fonts/font = ExtResource("1_k5kw2")
